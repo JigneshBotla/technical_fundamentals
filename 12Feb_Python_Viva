@@ -43,7 +43,37 @@ print(val.split())      # Splits into list (default by space)
 
 
 
-------  ------
+------ MAIL VERIFY ------
+
+email = "@gmail.com"
+mail_domain = ["gmail", "outlook", "icloud", "hotmail"]
+
+# Check spaces (invalid if spaces exist)
+chunks = email.strip().split(" ")
+if len(chunks) >= 2:
+    print("Not correct mail1")
+    exit()
+
+# Split using @
+chunk1 = email.strip().split("@")
+if len(chunk1) != 2:
+    print("Not correct mail2")
+    exit()
+
+# Extract domain name before "."
+domain_part = chunk1[1].split(".")[0].lower()
+
+if domain_part not in mail_domain:
+    print("Not correct mail2")
+    exit()
+
+# Check extension
+chunk2 = email.strip().split(".")
+if chunk2[-1].lower() != "com":
+    print("Not correct mail3")
+    exit()
+
+print("Correct MailId")
 
 
 ------  ------
