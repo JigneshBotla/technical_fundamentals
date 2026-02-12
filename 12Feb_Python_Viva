@@ -1,0 +1,18 @@
+------- REMOVING DUPLICATES -------
+
+data = "100,200,250,100,200,250,300"
+data1=data.strip().split(",")
+print(data1)
+
+for i in range(len(data1)):
+    x=data1[i].strip()
+    data1[i]=x
+
+print(data1)
+
+p=set(data1)
+print(list(p))
+
+print(list(set(data.strip().split(","))))
+
+
