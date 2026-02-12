@@ -16,3 +16,44 @@ print(list(p))
 print(list(set(data.strip().split(","))))
 
 
+------- SUM OF STRING ELEMENTS ------
+
+data = "1,2,3,4,5"
+print(sum(map(int,data.split(","))))
+
+------ inbuilt functions ------
+
+val = input("Enter here: ")
+
+print(val.isalnum())    # True if only letters and numbers
+print(val.isdigit())    # True if only digits (0–9)
+print(val.islower())    # True if all characters are lowercase
+print(val.isupper())    # True if all characters are uppercase
+print(val.isspace())    # True if only spaces
+print(val.istitle())    # True if each word starts with capital letter
+print(val.startswith("A"))  # True if string starts with 'A'
+print(val.endswith("z"))    # True if string ends with 'z'
+print(val.find("a"))    # Returns index of first 'a', else -1
+print(val.count("a"))   # Counts occurrences of 'a'
+print(val.replace("a", "@"))  # Replaces 'a' with '@'
+print(val.lower())      # Converts to lowercase
+print(val.upper())      # Converts to uppercase
+print(val.strip())      # Removes leading/trailing spaces
+print(val.split())      # Splits into list (default by space)
+
+
+
+------  ------
+
+
+------  ------
+
+
+
+------  ------
+
+
+------  ------
+
+
+------  ------
